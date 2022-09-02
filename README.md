@@ -12,4 +12,4 @@
 
 #### Screenshot
 
-![Desktop](./screenshots/project-13.png)
+![Desktop](./demo/project-13.png)
