@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.hamburger {
+  z-index: 999;
+}
+.bg {
+  background-image: url("../assets/bg.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  height: 115vh;
+  width: 100%;
+  z-index: -1;
+}
+.container {
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.mobile-list {
+  display: none;
+}
+
+.logo img {
+  width: 50%;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero-left {
+  margin: 40px 20px;
+}
+h1 {
+  color: white;
+  font-size: 2rem;
+}
+p {
+  color: white;
+  font-size: 0.8rem;
+  margin: 15px 0px;
+  font-weight: 300;
+}
+.hero-left button {
+  background-color: #5ba0e0;
+  color: #fff;
+  border: none;
+  padding: 7px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
+/* Features */
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feature-right h4 {
+  color: #fff;
+}
+.feature-right .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 40px 0px;
+}
+.list-item h6 {
+  font-weight: 700;
+}
+.list-item p {
+  font-family: serif;
+  color: black;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+/* Customer Section */
+.customer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.customer-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 30px 0px;
+}
+.icon img {
+  width: 50px;
+}
+.customer-cards {
+  margin: 40px 0px;
+}
+.customer-cards .card {
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card .code img {
+  background-color: #fdd7cd;
+  border-radius: 50%;
+  padding: 10px;
+}
+.card .analytics img {
+  background-color: #fff3d8;
+  border-radius: 50%;
+  padding: 5px;
+}
+.card .profile img {
+  background-color: #e0ffd8;
+  border-radius: 50%;
+  padding: 10px;
+}
+.card .support img {
+  background-color: #fbd8ff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.info h4 {
+  font-size: 0.7rem;
+}
+.info p {
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    min-width: 1360px;
+  }
+  .navbar .logo img {
+    width: 7rem;
+  }
+  .mobile-list {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    list-style: none;
+    color: #fff;
+    font-size: 1.4rem;
+    align-items: center;
+  }
+  .list-item button {
+    padding: 10px 35px;
+    font-size: 1.2rem;
+    background-color: #5ba0e0;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    align-content: center;
+  }
+  .hero-left {
+    margin-top: 80px;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .hero p {
+    width: 30rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .hero button {
+    padding: 15px 30px;
+  }
+  .hero-right img {
+    width: 40%;
+    position: relative;
+    bottom: 30rem;
+    left: 50%;
+    margin-left: 10rem;
+    margin-top: 10rem;
+  }
+  /* Features */
+
+  .list .list-item {
+    font-size: 2rem;
+  }
+  .feature-right h4 {
+    color: black;
+    font-size: 2rem;
+  }
+  /* Customer section */
+  .customer h2 {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+  .customer-cards {
+    display: flex;
+  }
+  .card {
+    width: 100%;
+    height: 20vh;
+  }
+  .card img {
+    width: 100px;
+  }
+  .card h4 {
+    font-size: 1.4rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
+}
